@@ -1,5 +1,5 @@
 import PageHeading from "@/components/PageHeading"
-import ReviewBox from "@/components/reviews/ReviewBox"
+import ReviewWrapper from "@/components/reviews/ReviewWrapper"
 import React from "react"
 
 const reviewPage = () => {
@@ -8,7 +8,8 @@ const reviewPage = () => {
       <PageHeading title="review list" />
       <div className="page-wrapper">
         <div className="col-span-full">
-          <ReviewBox />
+          <ReviewWrapper />
+          <ReviewWrapper />
         </div>
       </div>
     </section>

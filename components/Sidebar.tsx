@@ -12,12 +12,12 @@ const Sidebar = () => {
         {sideLinks.map((link) => (
           <Link href={link.path} key={link.title}>
             <li
-              className={`flex gap-4 mb-0.5 text-text-second hover:text-white p-4 hover:bg-primary rounded-xl duration-300 capitalize font-semibold text-base ${
+              className={`flex gap-4 items-center mb-0.5 text-text-second hover:text-white p-4 hover:bg-primary rounded-xl duration-300 capitalize font-semibold text-base ${
                 pathname === link.path ? "text-white bg-primary" : " "
               }`}
             >
               {/* <Image src={link.icon} width={24} height={24} alt={link.title} /> */}
-              <div className="">{link.icon}</div>
+              <div className="text-3xl">{link.icon}</div>
               {link.title}
             </li>
           </Link>

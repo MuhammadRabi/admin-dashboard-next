@@ -22,6 +22,8 @@ const config: Config = {
         "text-color-dark": "#EFEFEF",
         "2nd-color-dark": "#6F767E",
         "divider-color-dark": "#272B30",
+        "approve-btn": "#2ED480",
+        "reject-btn": "#EB5757",
       },
     },
   },

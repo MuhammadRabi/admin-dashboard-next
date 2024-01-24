@@ -1,10 +1,4 @@
 // Import SVG files
-import DashboardIcon from "../public/assets/icons/dashboard.svg"
-import BuildingIcon from "../public/assets/icons/building.svg"
-import PersonIcon from "../public/assets/icons/person.svg"
-import StarIcon from "../public/assets/icons/star.svg"
-import MessageIcon from "../public/assets/icons/message.svg"
-import ProfileIcon from "../public/assets/icons/profile.svg"
 import LocationIcon from "../public/assets/icons/location.png"
 import sales01 from "../public/assets/images/sales-01.jpg"
 import sales02 from "../public/assets/images/sales-02.jpg"
@@ -13,39 +7,44 @@ import sales04 from "../public/assets/images/sales-04.jpg"
 import propertyOne from "../public/assets/images/propertyone.jpg"
 import propertyTwo from "../public/assets/images/propertytwo.jpg"
 import propertyThree from "../public/assets/images/propertythree.jpg"
-import { ChatBubbleIcon } from "@radix-ui/react-icons"
+import { RxDashboard } from "react-icons/rx"
+import { RxAvatar } from "react-icons/rx"
+import { RxPerson } from "react-icons/rx"
+import { RxStar } from "react-icons/rx"
+import { RxEnvelopeClosed } from "react-icons/rx"
+import { RxArchive } from "react-icons/rx"
 
 export const sideLinks = [
   {
     title: "dashboard",
-    icon: <ChatBubbleIcon />,
+    icon: <RxDashboard />,
     path: "/dashboard",
   },
-  // {
-  //   title: "property",
-  //   icon: BuildingIcon,
-  //   path: "/property",
-  // },
-  // {
-  //   title: "agent",
-  //   icon: PersonIcon,
-  //   path: "/agent",
-  // },
-  // {
-  //   title: "review",
-  //   icon: StarIcon,
-  //   path: "/review",
-  // },
-  // {
-  //   title: "message",
-  //   icon: MessageIcon,
-  //   path: "/message",
-  // },
-  // {
-  //   title: "my profile",
-  //   icon: ProfileIcon,
-  //   path: "/profile",
-  // },
+  {
+    title: "property",
+    icon: <RxArchive />,
+    path: "/property",
+  },
+  {
+    title: "agent",
+    icon: <RxPerson />,
+    path: "/agent",
+  },
+  {
+    title: "review",
+    icon: <RxStar />,
+    path: "/review",
+  },
+  {
+    title: "message",
+    icon: <RxEnvelopeClosed />,
+    path: "/message",
+  },
+  {
+    title: "my profile",
+    icon: <RxAvatar />,
+    path: "/profile",
+  },
 ]
 
 export const salesData = [
