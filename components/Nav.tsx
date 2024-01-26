@@ -40,7 +40,7 @@ const Nav = () => {
           onChange={handleSearch}
         />
       </div>
-      <div className="flex gap-5">
+      <div className="flex gap-5 bg-cyan-400 ">
         <Image
           src={notification}
           width={24}

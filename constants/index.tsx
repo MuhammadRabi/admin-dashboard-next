@@ -23,27 +23,27 @@ export const sideLinks = [
   {
     title: "property",
     icon: <RxArchive />,
-    path: "/property",
+    path: "/dashboard/property",
   },
   {
     title: "agent",
     icon: <RxPerson />,
-    path: "/agent",
+    path: "/dashboard/agent",
   },
   {
     title: "review",
     icon: <RxStar />,
-    path: "/review",
+    path: "/dashboard/review",
   },
   {
     title: "message",
     icon: <RxEnvelopeClosed />,
-    path: "/message",
+    path: "/dashboard/message",
   },
   {
     title: "my profile",
     icon: <RxAvatar />,
-    path: "/profile",
+    path: "/dashboard/profile",
   },
 ]
 
