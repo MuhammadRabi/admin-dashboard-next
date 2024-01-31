@@ -1,14 +1,16 @@
 "use client"
 
 import Image from "next/image"
-import logo from "../public/assets/images/logo.png"
-import search from "../public/assets/icons/search.svg"
-import notification from "../public/assets/icons/notification.svg"
-import avatar from "../public/assets/images/profile-image.png"
+import logo from "../../public/assets/images/logo.png"
+import search from "../../public/assets/icons/search.svg"
+import notification from "../../public/assets/icons/notification.svg"
+import avatar from "../../public/assets/images/profile-image.png"
 import { usePathname, useSearchParams } from "next/navigation"
 import { useRouter } from "next/navigation"
+import { userProps } from "@/types/types"
+import UserCard from "./UserCard"
 
-const Nav = () => {
+const Nav = ({ user }: userProps) => {
   const pathname = usePathname()
   const searchParams = useSearchParams()
   const { replace } = useRouter()
@@ -40,7 +42,7 @@ const Nav = () => {
           onChange={handleSearch}
         />
       </div>
-      <div className="flex gap-5 bg-cyan-400 ">
+      <div className="flex gap-5">
         <Image
           src={notification}
           width={24}
@@ -48,23 +50,7 @@ const Nav = () => {
           alt="notification-bell"
           className="cursor-pointer"
         />
-        <div className="flex items-center gap-2.5 cursor-pointer">
-          <div className="avatar">
-            <Image
-              src={avatar}
-              width={40}
-              height={40}
-              alt="notification-bell"
-              className="rounded-full"
-            />
-          </div>
-          <div>
-            <h2 className="text-sm font-semibold text-text-primary">
-              Muhammad Rabi
-            </h2>
-            <h3 className="text-xs text-text-second">CEO of company</h3>
-          </div>
-        </div>
+        <UserCard user={user} />
       </div>
     </section>
   )
